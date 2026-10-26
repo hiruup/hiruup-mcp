@@ -1,0 +1,24 @@
+{
+  "name": "hiruup-mcp",
+  "version": "0.2.0",
+  "description": "Dedicated MCP server for Hiruup Air Quality Assistant",
+  "type": "module",
+  "bin": {
+    "hiruup-mcp": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "start:http": "bun run src/index.ts",
+    "start:stdio": "bun run src/stdio.ts",
+    "dev": "bun run --hot src/index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "dotenv": "^18.0.8",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
