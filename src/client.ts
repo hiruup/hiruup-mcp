@@ -9,7 +9,7 @@ export class AirQualityApiClient {
   }
 
   async getAirQuality(city: string): Promise<AirQualityResponse> {
-    const endpoint = `${this.baseUrl}/v1/air-quality?city=${encodeURIComponent(city)}`;
+    const endpoint = `${this.baseUrl}/api/v1/air-quality?city=${encodeURIComponent(city)}`;
 
     let response: Response;
     try {
